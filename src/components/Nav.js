@@ -164,7 +164,7 @@ const DraggableNavMenu = () => {
   };
 
   return (
-    <nav className="fixed sm:right-2 sm:top-2  flex items-center z-50">
+    <nav className="fixed right-1  sm:right-2 top-2  flex items-center z-50">
       {/* Menu Icons */}
       <div
         className={`flex space-x-4 transition-all duration-500 ease-in-out ${
@@ -176,11 +176,11 @@ const DraggableNavMenu = () => {
           transition: 'transform 0.5s ease, opacity 0.5s ease',
         }}
       >
-        <img onClick={()=>{toggleMenu();navigate('/home')}} src={homeIcon} alt="Home" className="w-12 h-12 cursor-pointer" />
-        <img onClick={()=>{toggleMenu();navigate('/about')}} src={aboutIcon} alt="About" className="w-12 h-12 cursor-pointer" />
-        <img onClick={()=>{toggleMenu();navigate('/cv')}} src={cvIcon} alt="CV" className="w-12 h-12 cursor-pointer" />
-        <img onClick={()=>{toggleMenu();navigate('/contact')}} src={contactIcon} alt="Contact" className="w-12 h-12 cursor-pointer" />
-        <img onClick={()=>{toggleMenu();navigate('/projects')}} src={workIcon} alt="Work" className="w-12 h-12 sm:pr-2 cursor-pointer" />
+        <img onClick={()=>{toggleMenu();navigate('/home')}} src={homeIcon} alt="Home" className="w-8 h-8 cursor-pointer" />
+        <img onClick={()=>{toggleMenu();navigate('/about')}} src={aboutIcon} alt="About" className="w-8 h-8 cursor-pointer" />
+        <img onClick={()=>{toggleMenu();navigate('/cv')}} src={cvIcon} alt="CV" className="w-8 h-8 cursor-pointer" />
+        <img onClick={()=>{toggleMenu();navigate('/contact')}} src={contactIcon} alt="Contact" className="w-8 h-8 cursor-pointer" />
+        <img onClick={()=>{toggleMenu();navigate('/projects')}} src={workIcon} alt="Work" className="w-8 h-8 sm:pr-2 cursor-pointer" />
       </div>
 
       {/* Toggle button */}
