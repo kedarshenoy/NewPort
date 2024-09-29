@@ -1,0 +1,84 @@
+.draggable-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+  
+  .menu-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .toggle-btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .toggle-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-icon.rotate {
+    transform: rotate(45deg);
+  }
+  
+  .menu-container span {
+    position: absolute;
+    right: 0;
+    transform: translate(0, -50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .menu-container.open span {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .menu-container span:nth-child(2) {
+    transform: translate(60px, 0);
+  }
+  
+  .menu-container span:nth-child(3) {
+    transform: translate(120px, 0);
+  }
+  
+  .menu-container span:nth-child(4) {
+    transform: translate(180px, 0);
+  }
+  
+  .menu-container span:nth-child(5) {
+    transform: translate(240px, 0);
+  }
+  
+  .menu-container.open span:nth-child(2) {
+    transform: translate(0, -60px);
+  }
+  
+  .menu-container.open span:nth-child(3) {
+    transform: translate(0, -120px);
+  }
+  
+  .menu-container.open span:nth-child(4) {
+    transform: translate(0, -180px);
+  }
+  
+  .menu-container.open span:nth-child(5) {
+    transform: translate(0, -240px);
+  }
+  
+  .svg-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
