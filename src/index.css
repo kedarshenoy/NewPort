@@ -17,6 +17,8 @@ code {
 
 body {
   background-color: black;
+  width: 100vw;
+  overflow: hidden;
 }
 
 /* @layer components {
