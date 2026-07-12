@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="400" height="400">
+  <defs>
+    <filter id="neonGlowScreen" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="1.4" result="blur1" />
+      <feGaussianBlur stdDeviation="3" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="screenMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#132227" />
+      <stop offset="100%" stop-color="#070B0D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Tech Background -->
+  <rect x="0" y="0" width="100" height="100" rx="16" fill="#101418" />
+
+  <!-- Outer Cyber Border -->
+  <rect x="5.5" y="5.5" width="89" height="89" rx="13" fill="url(#screenMetal)"
+        stroke="#4DD0E1" stroke-width="2.2" filter="url(#neonGlowScreen)" />
+
+  <!-- Monitor stand -->
+  <g stroke="#4DD0E1" stroke-width="2.6" stroke-linecap="round" fill="none" filter="url(#neonGlowScreen)">
+    <line x1="50" y1="72" x2="50" y2="80" />
+    <line x1="38" y1="86" x2="62" y2="86" />
+  </g>
+
+  <!-- Monitor frame -->
+  <rect x="22" y="22" width="56" height="50" rx="4" fill="url(#screenMetal)"
+        stroke="#4DD0E1" stroke-width="2.6" filter="url(#neonGlowScreen)" />
+
+  <!-- Screen inner bezel -->
+  <rect x="28" y="28" width="44" height="38" rx="2" fill="none"
+        stroke="#4DD0E1" stroke-width="1" opacity="0.6" />
+
+  <!-- QR code pattern on screen -->
+  <g fill="#4DD0E1" filter="url(#neonGlowScreen)">
+    <!-- top-left finder -->
+    <rect x="32" y="32" width="10" height="10" fill="none" stroke="#4DD0E1" stroke-width="1.6" />
+    <rect x="35" y="35" width="4" height="4" />
+
+    <!-- top-right finder -->
+    <rect x="58" y="32" width="10" height="10" fill="none" stroke="#4DD0E1" stroke-width="1.6" />
+    <rect x="61" y="35" width="4" height="4" />
+
+    <!-- bottom-left finder -->
+    <rect x="32" y="52" width="10" height="10" fill="none" stroke="#4DD0E1" stroke-width="1.6" />
+    <rect x="35" y="55" width="4" height="4" />
+
+    <!-- scattered data cells -->
+    <rect x="46" y="33" width="3" height="3" />
+    <rect x="52" y="33" width="3" height="3" />
+    <rect x="46" y="39" width="3" height="3" />
+    <rect x="52" y="45" width="3" height="3" />
+    <rect x="46" y="51" width="3" height="3" />
+    <rect x="58" y="46" width="3" height="3" />
+    <rect x="64" y="46" width="3" height="3" />
+    <rect x="58" y="52" width="3" height="3" />
+    <rect x="64" y="58" width="3" height="3" />
+    <rect x="46" y="58" width="3" height="3" />
+    <rect x="52" y="60" width="3" height="3" />
+  </g>
+</svg>

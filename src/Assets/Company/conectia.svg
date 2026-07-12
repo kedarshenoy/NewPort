@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="400" height="400">
+  <defs>
+    <filter id="neonGlowMark" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur1" />
+      <feGaussianBlur stdDeviation="3" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="cyberMetalMark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A282D" />
+      <stop offset="100%" stop-color="#080C0E" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Tech Background -->
+  <rect x="0" y="0" width="100" height="100" rx="15" fill="#111418" />
+
+  <!-- Outer Cyber Border -->
+  <rect x="5" y="5" width="90" height="90" rx="12" fill="none" stroke="#4DD0E1" stroke-width="2.2" filter="url(#neonGlowMark)" />
+
+  <!-- Core Shapes -->
+  <g filter="url(#neonGlowMark)">
+    <!-- Shape 1: Top-Left Rectangle -->
+    <rect x="18" y="26" width="28" height="20" rx="1" fill="url(#cyberMetalMark)" stroke="#4DD0E1" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- Shape 2: Right Inverted 'L' -->
+    <path d="M 54 26 h 27 a 1 1 0 0 1 1 1 v 46 a 1 1 0 0 1 -1 1 h -13 a 1 1 0 0 1 -1 -1 v -26 h -13 a 1 1 0 0 1 -1 -1 v -19 a 1 1 0 0 1 1 -1 z"
+          fill="url(#cyberMetalMark)" stroke="#4DD0E1" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- Shape 3: Bottom-Left 'L' -->
+    <path d="M 18 54 h 13 a 1 1 0 0 1 1 1 v 5 h 13 a 1 1 0 0 1 1 1 v 12 a 1 1 0 0 1 -1 1 h -27 a 1 1 0 0 1 -1 -1 v -18 a 1 1 0 0 1 1 -1 z"
+          fill="url(#cyberMetalMark)" stroke="#4DD0E1" stroke-width="1.8" stroke-linejoin="round" />
+  </g>
+</svg>
